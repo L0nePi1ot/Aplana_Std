@@ -10,9 +10,9 @@ public class Task_4 {
         double y = scanner.nextDouble();
         double z = scanner.nextDouble();
         double a = (x + y + z) / 3;
+        System.out.println("Среднее арифметическое число: " + a);
         int b = (int)a;
-        System.out.println("Среднее арифметическое число: " + b);
-        if ((a / 2) > 3) {
+        if ((b / 2) > 3) {
             System.out.println("Программа выполнена корректно");
         }
     }
