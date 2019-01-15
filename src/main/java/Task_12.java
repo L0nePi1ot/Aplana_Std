@@ -7,7 +7,7 @@ public class Task_12 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Введите 2 строки: ");
+        System.out.println("Введите 2 строки разной длинны: ");
         String a = scanner.nextLine();
         String b = scanner.nextLine();
         int lenA = a.length();
@@ -16,8 +16,11 @@ public class Task_12 {
         if(lenA > lenB) {
             System.out.println("Более длинной строкой является = " + a + " (" + lenA + " символов против " + lenB + ")");
         }
-        else {
+        else if(lenA < lenB){
             System.out.println("Более длинной строкой является = " + b + " (" + lenB + " символов против " + lenA + ")");
+        }
+        else {
+            System.out.println("Обе строки одинаковой длинны.");
         }
     }
 }
